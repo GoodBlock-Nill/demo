@@ -421,7 +421,71 @@
           </div>
           <div class="inner__wrap">
             <div class="option__end">
-              <div class="input-group search__box">
+              <div class="search-container">
+                <form action="#">
+                  <input type="text" placeholder="Search for items or creators." name="search">
+                  <button type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+              
+              <div class="filter__respon">
+                <button class="filter__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Filter</button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">FILTER</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body small">
+                    <div class="option__start filter__wrap">
+                      <div class="filter">
+                        <h4><i class="bi bi-sliders"></i> Filter Menu</h4>
+                        <button class="reset__btn"><i class="xi-refresh"></i></button>
+                      </div>
+                      <hr>
+          
+                      <div class="accordion-wrap">
+                        <button class="accordion">Categories</button>
+                        <div class="panel">
+                          <button>Art</button>
+                          <button>Gaming</button>
+                          <button>Collectibles</button>
+                          <button>Entertainment</button>
+                        </div>
+          
+                        <button class="accordion">Type</button>
+                        <div class="panel">
+                          <button><i class="xi-library-image-o"></i>&nbsp;image</button>
+                          <button><i class="xi-videocam-o"></i>&nbsp;Video</button>
+                          <button><i class="xi-headset"></i>&nbsp;Audio</button>
+                        </div>
+          
+                        <button class="accordion">Sale Type</button>
+                        <div class="panel">
+                          <button><i class="xi-spinner-3 xi-spin"></i>&nbsp;Live Sale</button>
+                          <button><i class="xi-recording-stop"></i>&nbsp;Ended Sale</button>
+                        </div>
+          
+                        <button class="accordion">Currencies</button>
+                        <div class="panel">
+                          <button>ETH(Ether)</button>
+                          <button>USDT</button>
+                        </div>
+          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <select class="form-select" aria-label="sort by">
+                  <option selected>Ending soon</option>
+                  <option value="1">Recently listd</option>
+                  <option value="2">Most favorited</option>
+                  <option value="3">Price low - high</option>
+                  <option value="4">Price high - low</option>
+                </select>
+              </div>
+              <!-- <div class="input-group search__box">
                 <input type="text" class="form-control" placeholder="Search for items or creators." aria-label="search" aria-describedby="basic-addon1">
                 <btn type="button" class="btn btn-outline-secondary" id="basic-addon1"><i class="xi-search"></i></btn>
               </div>
@@ -431,7 +495,7 @@
                 <option value="2">Most favorited</option>
                 <option value="3">Price low - high</option>
                 <option value="4">Price high - low</option>
-              </select>
+              </select> -->
             </div>
             <div id="INO" class="ino-wrap tabMenu1">
               <div class="ino__card">

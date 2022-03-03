@@ -1345,14 +1345,16 @@ Drops & Market Place Page
 }
 
 .option__start .accordion:after {
-  content: "\25BE"; 
+  content: "\F282";
+  font-family: "bootstrap-icons"; 
   color: #FDF2F7DB;
   float: right;
   font-size: 1rem;
   margin-left: 5px;
 }
 .option__start .active:after {
-  content: '\2715';
+  content: "\F286";
+  font-family: "bootstrap-icons"; 
   font-size: 1rem;
 }
 
@@ -1390,22 +1392,61 @@ Drops & Market Place Page
   align-self: flex-end;
   justify-content: end;
 }
-.option__end .search__box{
-  justify-content: end;
-}
-.option__end .search__box .form-control{
-  max-width: 260px;
-  width: 100%;
-  font-size: 0.8rem;
+.option__end .search-container {
+  float: right;
 }
 
-.option__end .form-select-sm {
-  margin-left: 10px;
+.option__end input[type=text] {
+  padding: 7.3px;
+  float: left;
+  color: #FDF2F7;
+  margin-top: 7.5px;
+  font-size: 0.8rem;
+  min-width: 375px;
+  background-color: #181818;
+  border: none;
+  outline: none;
+}
+
+.option__end .search-container button {
+  float: right;
+  padding: 4.5px 8px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #181818;
+  color: #FDF2F7DB;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.option__end select {
+  outline: none;
+  background-color: #181818;
+  color: #FDF2F7DB;
+  margin-top: 8px;
+  margin-right: 20px;
   width: 150px;
-  text-align: center;
-  border: 1px solid gray;
-  background-color: transparent;
-  color: #ccc;
+  height: 35px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+}
+.filter__respon>button {
+  display: none;
+}
+
+.option__end .offcanvas {
+  padding-top: 100px;
+  width: 100%;
+  max-width: 375px;
+  height: 100%;
+  background-color: #0d0015;
+  padding-left: 20px;
+}
+.option__end .offcanvas .offcanvas-header>button {
+  margin-right: 20px;
+  background-color: gray;
+  border-radius: 50%;
 }
 
 /* INO Card */
@@ -1722,9 +1763,9 @@ Auction & Marketplace Card
 .auction-wrap .au__card .card__content .card__icon,
 .market-wrap .market__card .card__content .card__icon {
   display: flex;
+  justify-content: right;
   height: 40px;
   width: 100%;
-  justify-content: end;
   align-items: center;
   padding: 0 5px;
   font-size: 24px;
