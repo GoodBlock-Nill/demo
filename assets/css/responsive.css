@@ -1,40 +1,78 @@
-@media (max-width: 768px) {
-  .notice h2 {
-    display: none;
-  }
-  .guide-contents span {
-    display: none;
-  }
-  .inner {
-    flex-direction: column-reverse;
-  }
+@media (max-width: 1410px) {
   .option__start {
-    top: 50px;
+    display: none;
+  }
+  .filter__wrap {
+    display: block;
+  }
+  .inner__wrap {
+    width: 100%;
+  }
+  .ino-wrap {
+    width: 100%;
   }
   .option__end {
     display: flex;
-    width: 100%;
     flex-direction: column;
-    align-items: flex-end;
   }
-  .trading .swiper-slide {
+  .option__end .search-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .option__end .search-container form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: auto;
+  }
+  .option__end input[type=text] {
+    float: left;
+    border: none;
+    width: 100%;
+  }
+  .option__end .search-container button {
+    padding: 3px 15px;
+    margin-right: 0;
+  }
+  .option__end .filter__respon {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .filter__respon>button {
+    display: block;
+    max-width: 470px;
+    width: 100%;
+    background-color: #3D2277;
+    color: #FDF2F7;
+    font-size: 0.8rem;
+    height: 35px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  .option__end select {
+    margin-right: 0;
+    margin-left: 5px;
     width: 100%;
     text-align: center;
-  }
-  .bid-status .section__wrap .item__wrap .item {
-    flex-direction: column;
-  }
-  .bid-status .section__wrap .item .item__group {
-    margin: 10px 0;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  .modal-body .item-wrap:first-child {
-    flex-wrap: nowrap;
+    max-width: 470px;
   }
 }
 
-
+@media (max-width: 1198px) {
+  .auction-wrap,
+  .market-wrap {
+    justify-content:center;
+  }
+}
 
 @media (max-width: 991.98px) {
   .offcanvas-collapse {
@@ -132,83 +170,46 @@
   }
 }
 
-@media (max-width: 1198px) {
-  .auction-wrap,
-  .market-wrap {
-    justify-content:center;
-  }
-}
 
-@media (max-width: 1410px) {
-  .option__start {
+@media (max-width: 768px) {
+  .notice h2 {
     display: none;
   }
-  .filter__wrap {
-    display: block;
+  .guide-contents span {
+    display: none;
   }
-  .inner__wrap {
-    width: 100%;
+  .inner {
+    flex-direction: column-reverse;
   }
-  .ino-wrap {
-    width: 100%;
+  .option__start {
+    top: 50px;
   }
   .option__end {
     display: flex;
+    width: 100%;
     flex-direction: column;
-  }
-  .option__end .search-container {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .option__end .search-container form {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 100%;
+    align-items: flex-end;
   }
   .option__end input[type=text] {
     float: left;
-    display: flex;
-    width: 100%;
-    max-width: 900px;
-  }
-  .option__end .search-container button {
-    display: flex;
-    padding: 3px 15px;
-    margin-right: 0;
-  }
-  .option__end input[type=text] {
-    border: none
-  }
-  .option__end .filter__respon {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .filter__respon>button {
-    display: block;
-    max-width: 470px;
-    width: 100%;
-    background-color: #3D2277;
-    color: #FDF2F7;
-    font-size: 0.8rem;
-    height: 35px;
-    margin-top: 8px;
     border: none;
-    border-radius: 4px;
-    margin-right: 5px;
+    min-width: fit-content;
+    width: 100%;
   }
-  .option__end select {
-    margin-right: 0;
-    margin-left: 5px;
+  .trading .swiper-slide {
     width: 100%;
     text-align: center;
-    max-width: 470px;
+  }
+  .bid-status .section__wrap .item__wrap .item {
+    flex-direction: column;
+  }
+  .bid-status .section__wrap .item .item__group {
+    margin: 10px 0;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .modal-body .item-wrap:first-child {
+    flex-wrap: nowrap;
   }
 }
+

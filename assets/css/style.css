@@ -1393,15 +1393,19 @@ Drops & Market Place Page
   justify-content: end;
 }
 .option__end .search-container {
+  display: flex;
   float: right;
+  flex-wrap: wrap;
 }
 
 .option__end input[type=text] {
+  display: flex;
   padding: 7.3px;
   float: left;
   color: #FDF2F7;
   margin-top: 7.5px;
   font-size: 0.8rem;
+  max-width: 900px;
   min-width: 375px;
   background-color: #181818;
   border: none;
@@ -1409,6 +1413,7 @@ Drops & Market Place Page
 }
 
 .option__end .search-container button {
+  display: flex;
   float: right;
   padding: 4.5px 8px;
   margin-top: 8px;
@@ -1697,7 +1702,7 @@ Auction & Marketplace Card
   border-radius: 6px;
   left: 10px;
   bottom: 185px;
-  z-index: 9;
+  z-index: 1;
 }
 .countdown .count__wrap {
   position: absolute;
@@ -1766,6 +1771,7 @@ Auction & Marketplace Card
   justify-content: right;
   height: 40px;
   width: 100%;
+  text-align: right;
   align-items: center;
   padding: 0 5px;
   font-size: 24px;
@@ -1775,6 +1781,7 @@ Auction & Marketplace Card
 .market-wrap .market__card .card__content .card__icon button {
   margin-left: 5px;
   background-color: transparent;
+  text-align: right;
   color: #FDF2F7;
   border: none;
 }
