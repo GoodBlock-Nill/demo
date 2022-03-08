@@ -149,104 +149,75 @@
   <!-- Header End -->
 
   <!-- Content Start -->
-  <div class="container content-wrap">
-    <div class="pt-5">
-      <div class="pt-5 mb-5 profile-card-wrap">
-        <div class="card profile-card">
-          <img class="card-img" src="./assets/images/creator1.png" alt="...">
-          <div class="card-body">
-            <p class="card-text">good-block@gmail.com</p>
-            <a href="#" class="btn card-btn">Change</a>
+  <section class="kyc-one">
+    <div class="container">
+      <h2 class="step-title">Identity Verification</h2>
+      <div class="step-wrap">
+        <div class="step-item">
+          <div class="step-text"><i class="bi bi-info-lg"></i></div>
+          <div class="step-text">Basic <br>Information</div>
+        </div>
+        <div class="step-item">
+          <div class="step-text"><i class="bi bi-images"></i></div>
+          <div class="step-text">Upload <br>Photos</div>
+        </div>
+        <div class="step-item">
+          <div class="step-text"><i class="bi bi-check-lg"></i></div>
+          <div class="step-text">Confirm <br>Submit</div>
+        </div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-contents">
+        <h4>Basic Information</h4>
+        <div class="country-wrap">
+          <div class="title">Select Country</div>
+          <div class="country-select">
+            <select>
+              <option selected>Please Select Your Country</option>
+              <option value="us">United States</option>
+              <option value="ko">South Korea</option>
+              <option value="jp">Japan</option>
+              <option value="cn">China</option>
+            </select>
           </div>
         </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-9 col-xl-8">
-          <div class="mb-5">
-            <div class="row gy-2 profile-status-wrap">
-              <div class="col-6 col-md-3 profile-status" style="border-right: 2px solid rgba(255, 255, 255, 0.32);">
-                <span class="profile-status-title">Account</span>
-                <span class="profile-status-text">good-block@gmail.com</span>
-              </div>
-              <div class="col-6 col-md-3 profile-status">
-                <span class="profile-status-title">Account Status</span>
-                <span class="profile-status-text">Withdrawal Locked</span>
-              </div>
-              <div class="col-6 col-md-3 profile-status">
-                <span class="profile-status-title">Last Login Time</span>
-                <span class="profile-status-text">2022-02-01 14:46:34 (UTC)</span>
-              </div>
-              <div class="col-6 col-md-3 profile-status">
-                <span class="profile-status-title">IP</span>
-                <span class="profile-status-text">222.106.26.115</span>
-              </div>
-            </div>
+        <div class="name-wrap">
+          <div class="name">
+            <div class="title">Last Name</div>
+            <input type="text" placeholder="Last Name">
           </div>
-
-          <div class="pt-5">
-            <div class="mb-3">
-              <h5 class="content-title">Account Setting</h5>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 g-2">
-              <div class="col">
-                <div class="account-setting-card-wrap">
-                  <div class="card account-setting-card">
-                    <div class="card-icon">
-                      <i class="xi-profile"></i>
-                    </div>
-                    <div class="card-body pe-0">
-                      <p class="card-text">Identity Verification</p>
-                      <a href="./kyc-step1.html" class="btn card-btn">Verify</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="account-setting-card-wrap">
-                  <div class="card account-setting-card">
-                    <div class="card-icon">
-                      <i class="xi-google fw-bold"></i>
-                    </div>
-                    <div class="card-body pe-0">
-                      <p class="card-text">Google Authentication</p>
-                      <a href="#" class="btn card-btn">Verify</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="account-setting-card-wrap">
-                  <div class="card account-setting-card">
-                    <div class="card-icon">
-                      <i class="xi-lock"></i>
-                    </div>
-                    <div class="card-body pe-0">
-                      <p class="card-text">Password</p>
-                      <a href="#" class="btn card-btn">Change</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="account-setting-card-wrap">
-                  <div class="card account-setting-card">
-                    <div class="card-icon">
-                      <i class="xi-shield-checked"></i>
-                    </div>
-                    <div class="card-body pe-0">
-                      <p class="card-text">Anti-Phishing Code</p>
-                      <a href="#" class="btn card-btn">Add</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="name">
+            <div class="title">First Name</div>
+            <input type="text" placeholder="First Name">
           </div>
         </div>
+        <div class="id-wrap">
+          <div class="title">Choose ID Type</div>
+          <div class="radio__group">
+            <label class="radiobox" id="passportBtn">
+              <input type="radio" name="radio">Passport
+              <span class="checkmark"></span>
+            </label>
+            <label class="radiobox"  id="idcardBtn">
+              <input type="radio" name="radio">ID Card
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="number-wrap" id="passNum" style="display: none;">
+            <div class="title">Passport Number</div>
+            <input type="text" placeholder="Please enter passport number.">
+          </div>
+          <div class="number-wrap" id="idNum" style="display: none;">
+            <div class="title">ID Number</div>
+            <input type="text" placeholder="Please enter ID Card number">
+          </div>
+        </div>
+        <div class="btn-wrap">
+          <button class="btn__one"><a href="./account-info.html">Go to Account</a></button>
+          <button class="btn__two" type="submit"><a href="./kyc-step2.html">NEXT</a></button>
+        </div>
       </div>
-    </div>
-  </div>
+  </section>
   <!-- Content End -->
 
   <!-- Footer Start -->
@@ -310,5 +281,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- Main : JS -->
   <script src="./assets/js/main.js"></script>
+
+  <script>
+    // KYC (Choose ID Type)  
+    $(document).ready(function(){
+      $('#passportBtn').click(function() {
+        $("#passNum").show();
+        $("#idNum").hide();      
+      })
+      $('#idcardBtn').click(function() {
+        $("#idNum").show();
+        $("#passNum").hide();
+      })
+    });
+  </script>
 </body>
 </html>
