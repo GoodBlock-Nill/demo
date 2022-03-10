@@ -168,6 +168,11 @@
     padding-left: 0;
     justify-content: center;
   }
+  .kyc-two .photo-item,
+  .kyc-three .photo-wrap {
+    justify-content: space-around;
+  }
+   
 }
 
 
@@ -211,5 +216,6 @@
   .modal-body .item-wrap:first-child {
     flex-wrap: nowrap;
   }
+  
 }
 

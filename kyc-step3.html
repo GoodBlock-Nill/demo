@@ -149,7 +149,7 @@
   <!-- Header End -->
 
   <!-- Content Start -->
-  <section class="kyc kyc-one">
+  <section class="kyc kyc-three">
     <div class="container">
       <h2 class="step-title">Identity Verification</h2>
       <div class="step-wrap">
@@ -168,53 +168,58 @@
         <div class="step-line"></div>
       </div>
       <div class="step-contents">
-        <h4>Basic Information</h4>
-        <div class="country-wrap">
-          <div class="title">Select Country</div>
-          <div class="country-select">
-            <select>
-              <option selected>Please Select Your Country</option>
-              <option value="us">United States</option>
-              <option value="ko">South Korea</option>
-              <option value="jp">Japan</option>
-              <option value="cn">China</option>
-            </select>
-          </div>
+        <h4>Confirm Submit</h4>
+        <div class="text-wrap">
+          <div class="text">Please check your information below to make suere everytings is correct.</div>
         </div>
-        <div class="name-wrap">
-          <div class="name">
-            <div class="title">Last Name</div>
-            <input type="text" placeholder="Last Name">
+        <div class="box-wrap">
+          <div class="text-wrap">
+            <div class="text-item">
+              <div class="sub-title">Your Country</div>
+              <div class="text">Korea</div>
+            </div>
+            <div class="text-item">
+              <div class="sub-title">Your Name</div>
+              <div class="text">Satoshi Nakamoto</div>
+            </div>
+            <div class="text-item">
+              <div class="sub-title">ID Card Number</div>
+              <div class="text">1234561234567</div>
+            </div>
+            <div class="text-item">
+              <div class="sub-title">Uploaded Photos</div>
+            </div> 
           </div>
-          <div class="name">
-            <div class="title">First Name</div>
-            <input type="text" placeholder="First Name">
-          </div>
-        </div>
-        <div class="id-wrap">
-          <div class="title">Choose ID Type</div>
-          <div class="radio__group">
-            <label class="radiobox" id="passportBtn">
-              <input type="radio" name="radio">Passport
-              <span class="checkmark"></span>
-            </label>
-            <label class="radiobox"  id="idcardBtn">
-              <input type="radio" name="radio">ID Card
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div class="number-wrap" id="passNum" style="display: none;">
-            <div class="title">Passport Number</div>
-            <input type="text" placeholder="Please enter passport number.">
-          </div>
-          <div class="number-wrap" id="idNum" style="display: none;">
-            <div class="title">ID Number</div>
-            <input type="text" placeholder="Please enter ID Card number">
+          <div class="photo-wrap">
+            <div class="photo-item">
+              <div class="img-wrap">
+                <div class="box">
+                  <img src="./assets/images/kyc/ID_Front.png" alt="...">
+                </div>
+                <div class="text">Front of ID</div>          
+              </div>
+            </div>
+            <div class="photo-item">
+              <div class="img-wrap">
+                <div class="box">
+                  <img src="./assets/images/kyc/ID_Back.png" alt="...">
+                </div>
+                <div class="text">Back of ID</div>          
+              </div>
+            </div>
+            <div class="photo-item">
+              <div class="img-wrap">
+                <div class="box">
+                  <img src="./assets/images/kyc/ID_KYC.png" alt="...">
+                </div>
+                <div class="text">Selfie Photo</div>          
+              </div>
+            </div>
           </div>
         </div>
         <div class="btn-wrap">
-          <button class="btn__one"><a href="./account-info.html">back to Account</a></button>
-          <button class="btn__two" type="submit"><a href="./kyc-step2.html">NEXT</a></button>
+          <button class="btn__one"><a href="./account-info.html">Back to Account</a></button>
+          <button class="btn__two" type="submit"><a href="./kyc-submit.html">Submit</a></button>
         </div>
       </div>
   </section>
@@ -281,19 +286,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- Main : JS -->
   <script src="./assets/js/main.js"></script>
-
-  <script>
-    // KYC (Choose ID Type)  
-    $(document).ready(function(){
-      $('#passportBtn').click(function() {
-        $("#passNum").show();
-        $("#idNum").hide();      
-      })
-      $('#idcardBtn').click(function() {
-        $("#idNum").show();
-        $("#passNum").hide();
-      })
-    });
-  </script>
 </body>
 </html>
