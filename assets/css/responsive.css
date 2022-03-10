@@ -216,6 +216,18 @@
   .modal-body .item-wrap:first-child {
     flex-wrap: nowrap;
   }
-  
+  .kyc .btn-wrap {
+    flex-direction: column;
+  }
+  .btn__one,
+  .btn__two {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 
+@media (max-width: 425px) {
+  .kyc .step-wrap .step-line {
+    max-width: 65%;
+  }
+} 
