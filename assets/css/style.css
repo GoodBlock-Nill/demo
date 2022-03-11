@@ -3183,12 +3183,20 @@ ul.breadcrumb li a:hover {
   color: purple;
 }
 
-.kyc .btn-wrap {
+.kyc .btn-wrap,
+.anti .btn-wrap,
+.change-pass .btn-wrap,
+.google-otp .btn-wrap {
   display: flex  ;
   width: 100%;
   max-width: 700px;
   margin-top: 80px;
   margin-bottom: 15px;
+}
+.anti .btn-wrap,
+.change-pass .btn-wrap,
+.google-otp .btn-wrap {
+  margin-top: 40px;
 }
 .kyc-submit .btn-wrap {
  margin-top: 20px; 
@@ -3228,8 +3236,202 @@ ul.breadcrumb li a:hover {
 .btn__two:hover {
   background: linear-gradient(164.48deg, rgba(151, 79, 233, 1) 11.96%, rgba(96, 52, 163, 1) 53%, rgba(151, 79, 233, 1) 79.27%);
 }
+.anti,
+.change-pass,
+.google-otp {
+  margin-top: 150px;
+}
+.anti .container,
+.change-pass .container,
+.google-otp .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.anti .title-wrap,
+.change-pass .title-wrap,
+.google-otp .title-wrap {
+  max-width: 824px;
+  width: 100%;
+}
+.anti .title-wrap h2,
+.change-pass .title-wrap h2,
+.google-otp .title-wrap h2{
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.google-otp .title-wrap h2 {
+  margin-bottom: 0;
+}
+.anti .title-wrap p,
+.change-pass .title-wrap p {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #974FE9;
+}
+.anti .contents-wrap,
+.change-pass .contents-wrap,
+.google-otp .contents-wrap {
+  max-width: 824px;
+  width: 100%;
+  margin-top: 30px;
+  border: 2px solid rgba(253, 242, 247, 0.68);
+  box-sizing: border-box;
+  box-shadow: -2px -2px 6px 2px rgba(253, 242, 247, 0.24), 2px 2px 6px 2px rgba(253, 242, 247, 0.24);
+  border-radius: 8px;
+  padding: 50px;
+}
+.anti .contents-wrap h2 {
+  font-size: 1.1rem;
+  color: #FDF2F7;
+}
+.anti .contents-wrap input,
+.change-pass .contents-wrap input,
+.google-otp .contents-wrap input {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 50px;
+  color: rgba(253, 242, 247, 0.68);
+  padding-left: 20px;
+  font-size: 0.9rem;
+  background: rgba(253, 242, 247, 0.2);
+  border: 1px solid rgba(253, 242, 247, 0.68);
+  box-sizing: border-box;
+  border-radius: 6px;
+  outline: none;
+}
+.anti .contents-wrap .text {
+  font-size: 0.8rem;
+  color: rgba(253, 242, 247, 0.48);
+}
+.anti .contents-wrap .link-text {
+  margin-top: 30px;
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: right;
+}
+.anti .contents-wrap .link-text a {
+  color: #EBB100;
+}
 
+.change-pass .contents-wrap .item-wrap {
+  position: relative;
+}
+.change-pass .contents-wrap .item-wrap .send-code {
+  position: absolute;
+  right: 0;
+  top: 46px;
+  margin-right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: #EBB100;
+}
 
+.change-pass .contents-wrap .item-wrap .send-code:hover {
+  opacity: .8;
+}
+.google-otp .item-wrap {
+  margin-top: 50px;
+}
+.google-otp .item-wrap:first-child {
+  margin-top: 0;
+}
+.google-otp .item-wrap .sub-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+.google-otp .item-wrap .text {
+  font-size: 0.9rem;
+}
+.google-otp .icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.google-otp .img-box {
+  max-width: 180px;
+  max-height: 80px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.google-otp .img-box img {
+  width: 100%;
+  height: 100%;
+}
+.google-otp .google-key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.google-otp .google-key .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:30px;
+  width: 100%;
+  max-width: 598px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+.google-otp .google-key .qr-code {
+  max-width: 132px;
+  max-height: 132px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.google-otp .google-key .qr-code img {
+  width: 100%;
+  height: 100%;
+}
+.google-otp .secret-key {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  background: rgba(253, 242, 247, 0.2);
+  border: 1px solid rgba(21, 6, 41, 0.32);
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 4px;
+}
+.google-otp .secret-key .key-code {
+  width: 100%;
+  text-align: center;
+  color: rgba(21, 6, 41, 0.68);
+  font-size: 0.8rem;
+  padding-left: 30px;
+}
+.google-otp .secret-key button {
+  border: none;
+  width: 38px;
+  height: 38px;
+  color: #fff;
+  background: rgba(21, 6, 41, 0.24);
+}
+.google-otp .secret-key button:hover {
+  background: rgba(21, 6, 41, .68);
+}
+
+.google-otp .item-wrap:nth-child(2) .text {
+  width: 100%;
+  font-size: 0.8rem;
+  color: #974FE9;
+}
 
 /* Footer */
 .footer__1 {

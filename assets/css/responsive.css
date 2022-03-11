@@ -216,8 +216,14 @@
   .modal-body .item-wrap:first-child {
     flex-wrap: nowrap;
   }
-  .kyc .btn-wrap {
+  .kyc .btn-wrap,
+  .anti .btn-wrap,
+  .change-pass .btn-wrap,
+  .google-otp .btn-wrap {
     flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
   }
   .btn__one,
   .btn__two {
@@ -227,7 +233,22 @@
 }
 
 @media (max-width: 425px) {
+  .kyc .step-item .step-text:first-child {
+    padding-top: 5px;
+  }
   .kyc .step-wrap .step-line {
     max-width: 65%;
+  }
+  .kyc .step-wrap,
+  .kyc .step-contents,
+  .anti .contents-wrap,
+  .change-pass .contents-wrap,
+  .google-otp .contents-wrap {
+    padding: 20px;
+  }
+  .anti .contents-wrap input,
+  .change-pass .contents-wrap input,
+  .google-otp .contents-wrap input {
+    font-size: 0.75rem;
   }
 } 

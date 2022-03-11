@@ -149,104 +149,57 @@
   <!-- Header End -->
 
   <!-- Content Start -->
-  <div class="container content-wrap">
-    <div class="pt-5">
-      <div class="pt-5 mb-5 profile-card-wrap">
-        <div class="card profile-card">
-          <img class="card-img" src="./assets/images/creator1.png" alt="...">
-          <div class="card-body">
-            <p class="card-text">good-block@gmail.com</p>
-            <a href="#" class="btn card-btn">Change</a>
+  <section class="google-otp">
+    <div class="container">
+      <div class="title-wrap">
+        <h2>Google Authenticator</h2>
+      </div>
+      <div class="contents-wrap">
+        <div class="item-wrap">
+          <div class="sub-title">1. Download and install Google Authenticator</div>
+          <div class="icon">
+            <div class="img-box">
+              <a target="_blink" href="https://apps.apple.com/us/app/google-authenticator/id388497605">
+                <img src="./assets/images/icon/app-store.png" alt="...">
+              </a>
+            </div>
+            <div class="img-box">
+              <a target="_blink" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">
+                <img src="./assets/images/icon/google-play.png" alt="...">
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-9 col-xl-8">
-          <div class="mb-5">
-            <div class="row gy-2 profile-status-wrap">
-              <div class="col-6 col-md-3 profile-status" style="border-right: 2px solid rgba(255, 255, 255, 0.32);">
-                <span class="profile-status-title">Account</span>
-                <span class="profile-status-text">good-block@gmail.com</span>
+        <div class="item-wrap">
+          <div class="sub-title">2. Scanning QR Code with Google Authentication or enter the key manually</div>
+          <div class="google-key">
+            <div class="box">
+              <div class="qr-code">
+                <img src="./assets/images/icon/qrcode.png" alt="">
               </div>
-              <div class="col-6 col-md-3 profile-status">
-                <span class="profile-status-title">Account Status</span>
-                <span class="profile-status-text">Withdrawal Locked</span>
-              </div>
-              <div class="col-6 col-md-3 profile-status">
-                <span class="profile-status-title">Last Login Time</span>
-                <span class="profile-status-text">2022-02-01 14:46:34 (UTC)</span>
-              </div>
-              <div class="col-6 col-md-3 profile-status">
-                <span class="profile-status-title">IP</span>
-                <span class="profile-status-text">222.106.26.115</span>
-              </div>
+              <div class="secret-key">
+                <div class="key-code">DFRGK23IRPFID8IE</div>
+                <button><i class="bi bi-stickies-fill"></i></button>
+              </div> 
+              <div class="text">Please keep your key safely before completing the binding. </div>
+              <div class="text">if your mobile phone is lost, stolen or the key is deleted, you need this key to retrieve your Google authentication code.</div>
             </div>
           </div>
-
-          <div class="pt-5">
-            <div class="mb-3">
-              <h5 class="content-title">Account Setting</h5>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 g-2">
-              <div class="col">
-                <div class="account-setting-card-wrap">
-                  <div class="card account-setting-card">
-                    <div class="card-icon">
-                      <i class="xi-profile"></i>
-                    </div>
-                    <div class="card-body pe-0">
-                      <p class="card-text">Identity Verification</p>
-                      <a href="./kyc-step1.html" class="btn card-btn">Verify</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="account-setting-card-wrap">
-                  <div class="card account-setting-card">
-                    <div class="card-icon">
-                      <i class="xi-google fw-bold"></i>
-                    </div>
-                    <div class="card-body pe-0">
-                      <p class="card-text">Google Authentication</p>
-                      <a href="./google-otp.html" class="btn card-btn">Verify</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="account-setting-card-wrap">
-                  <div class="card account-setting-card">
-                    <div class="card-icon">
-                      <i class="xi-lock"></i>
-                    </div>
-                    <div class="card-body pe-0">
-                      <p class="card-text">Password</p>
-                      <a href="./password-change.html" class="btn card-btn">Change</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="account-setting-card-wrap">
-                  <div class="card account-setting-card">
-                    <div class="card-icon">
-                      <i class="xi-shield-checked"></i>
-                    </div>
-                    <div class="card-body pe-0">
-                      <p class="card-text">Anti-Phishing Code</p>
-                      <a href="./anti-phishing.html" class="btn card-btn">Add</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="item-wrap">
+          <div class="sub-title">3. Complete Verification</div>
+          <div class="text">Password</div>
+          <input type="text" placeholder="Please enter the password ">
+          <div class="text">Google Authentication Code</div>
+          <input type="text" placeholder="Please enter the Google Authentication code ">
+        </div>
+        <div class="btn-wrap">
+          <button class="btn__one"><a href="./account-info.html">Cancel</a></button>
+          <button class="btn__two" type="submit"><a href="./account-info.html">Submit</a></button>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- Content End -->
 
   <!-- Footer Start -->
